@@ -15,9 +15,11 @@ import android.widget.Toast;
 import com.example.a305_71p.sqliteHelper.DataBaseHelper;
 import com.example.a305_71p.sqliteHelper.Util;
 import com.example.a305_71p.sqliteHelper.itemModel;
+import com.google.android.datatransport.runtime.BuildConfig;
+import com.google.android.libraries.places.api.Places;
+import com.google.android.libraries.places.api.net.PlacesClient;
 
-public class createNewAdvert extends AppCompatActivity {
-
+public class    createNewAdvert extends AppCompatActivity { ;
     Button saveBtn, backBtn;
     TextView type, name, phone, description, location, date;
     EditText typeInput, nameInput, descriptionInput,locationInput,dateInput, phoneInput;
@@ -57,7 +59,8 @@ public class createNewAdvert extends AppCompatActivity {
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(createNewAdvert.this, MainActivity.class));
+                Intent backToHome = new Intent(createNewAdvert.this,MainActivity.class);
+                startActivity(backToHome);
             }
         });
 
@@ -81,5 +84,6 @@ public class createNewAdvert extends AppCompatActivity {
 
             }
         });
+
     }
 }
