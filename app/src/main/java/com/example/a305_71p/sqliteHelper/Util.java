@@ -13,4 +13,11 @@ public class Util {
     public static final String DATE = "item_date";
     public static final String LOCATION = "item_location";
 
+    public static final double melLa =  -37.840935;
+    public static final double melLo =  144.946457;
+
+    public static final double syLa =  -33.868820;
+    public static final double syLo =  151.209290;
+
+
 }
